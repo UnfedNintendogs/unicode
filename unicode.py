@@ -5,6 +5,7 @@ def list():
     with open("characters.txt") as f:
         for line in f:
             print(line, end='')
+    quit()
 
 
 def encode():
@@ -15,6 +16,7 @@ def encode():
     number = letter
     letter = temp
     writetext(number, letter)
+    quit()
 
 
 def writetext(number, letter):
@@ -36,6 +38,7 @@ def decode():
     number = ord(letter)
     print(number)
     writetext(number, letter)
+    quit()
 
 
 def questions():
