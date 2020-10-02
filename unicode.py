@@ -35,15 +35,15 @@ def decode():
 
 def questions():
 
-    boi = input("Encode, Decode or List: ")
+    type = input("Encode, Decode or List: ")
 
-    if boi == "encode" or boi == "Encode":
+    if type == "encode" or type == "Encode":
         encode()
 
-    elif boi == "decode" or boi == "Decode":
+    elif type == "decode" or type == "Decode":
         decode()
 
-    elif boi == "list" or boi == "List":
+    elif type == "list" or type == "List":
         list()
 
     else:
