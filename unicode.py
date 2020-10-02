@@ -19,10 +19,15 @@ def encode():
 
 def writetext(number, letter):
     f = open("characters.txt", "a+")
-    words = str(number) + " = " + str(letter)
+    words = str(number) + " = " + str(letter) + "\n"
     f.write(words)
-    subprocess.Popen(
-        ['sort characters.txt -n -b -u -o characters.txt'], shell=True)
+    f.seek(0)
+    linesinfile = f.readlines()
+    lines = sorted(linesinfile, key=lambda line: int(line.split()[0]))
+    finallines = dict.fromkeys(lines)
+    f.truncate(0)
+    for line in finallines:
+        f.write(line)
     f.close()
 
 
