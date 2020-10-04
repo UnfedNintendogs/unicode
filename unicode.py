@@ -9,12 +9,9 @@ def list():
 
 
 def encode():
-    letter = int(input('Number? '))
-    number = chr(letter)
-    print(number)
-    temp = number
-    number = letter
-    letter = temp
+    number = int(input('Number? '))
+    letter = chr(number)
+    print(letter)
     writetext(number, letter)
     quit()
 
