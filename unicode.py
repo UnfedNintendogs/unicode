@@ -1,6 +1,3 @@
-import subprocess
-
-
 def list():
     with open("characters.txt", "a+") as f:
         for line in f:
