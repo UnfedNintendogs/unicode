@@ -6,3 +6,5 @@ Stores all characters that have been encoded and decoded
 List all characters that have been stored  
 Sorts stored characters numerically  
 Automatically deletes stored duplicates  
+
+###### tiny boi  
