@@ -1,5 +1,6 @@
 def list():
     with open("characters.txt", "a+") as f:
+        f.seek(0)
         for line in f:
             print(line, end='')
     quit()
@@ -15,6 +16,7 @@ def encode():
 
 def writetext(number, letter):
     f = open("characters.txt", "a+")
+    f.seek(0)
     words = str(number) + " = " + str(letter) + "\n"
     f.write(words)
     f.seek(0)
