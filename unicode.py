@@ -3,7 +3,7 @@ def list():
         f.seek(0)
         for line in f:
             print(line, end='')
-    quit()
+    questions()
 
 
 def encode():
@@ -11,7 +11,7 @@ def encode():
     letter = chr(number)
     print(letter)
     writetext(number, letter)
-    quit()
+    questions()
 
 
 def writetext(number, letter):
@@ -34,7 +34,7 @@ def decode():
     number = ord(letter)
     print(number)
     writetext(number, letter)
-    quit()
+    questions()
 
 
 def questions():
